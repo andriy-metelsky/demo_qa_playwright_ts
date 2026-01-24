@@ -20,6 +20,6 @@ test.describe('Web Tables', () => {
 
     // Delete
     await webTablesPage.deleteRecord(user.email);
-    await expect(addedRow).not.toBeVisible();
+    await expect(addedRow).toHaveCount(0);
   });
 });

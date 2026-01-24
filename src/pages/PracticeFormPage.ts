@@ -30,7 +30,7 @@ export class PracticeFormPage {
     await this.emailInput.fill(data.email);
     await this.page.getByText(data.gender, { exact: true }).click();
     await this.mobileInput.fill(data.mobile);
-    
+
     await this.dateOfBirthInput.click();
     await this.page.locator('.react-datepicker__month-select').selectOption('9'); // Oct is 9 (0-indexed)
     await this.page.locator('.react-datepicker__year-select').selectOption('1990');
@@ -41,7 +41,6 @@ export class PracticeFormPage {
     }
 
     await this.addressInput.fill(data.address);
-    
     await this.stateDropdown.click();
     await this.page.getByText(data.state, { exact: true }).click();
     await this.cityDropdown.click();
