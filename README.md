@@ -1,6 +1,6 @@
 # DemoQA Playwright TypeScript Framework
 
-A production-quality Playwright + TypeScript test automation framework for [demoqa.com](https://demoqa.com).
+Playwright + TypeScript test automation framework for [demoqa.com](https://demoqa.com).
 
 ## Architecture Decisions
 
